@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whack A Mole!</title>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container-fluid custom">
+		<div class="row">
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-center col-md-push-2">
+				<h1>Hit The Mole</h1>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<span class="score">0</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 text-center col-sm-push-2">
+				<div class="progressBar">
+					<div id="timer"></div>
+				</div>
+			</div>
+		</div>
+		<!-- end row 1 -->
+		<div class="game">
+			<div class="row">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<div class="hole">
+					</div>
+					<div class="mole"></div>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<div class="hole">
+					</div>
+					<div class="mole"></div>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<div class="hole">
+					</div>
+					<div class="mole"></div>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<div class="hole">
+					</div>
+					<div class="mole"></div>
+				</div>
+			</div>
+			<!-- end row -->
+			<div class="row">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<div class="hole">
+					</div>
+					<div class="mole"></div>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<div class="hole">
+					</div>
+					<div class="mole"></div>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<div class="hole">
+					</div>
+					<div class="mole"></div>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<div class="hole">
+					</div>
+					<div class="mole"></div>
+				</div>
+			</div>
+			<!-- end row -->
+			<div class="row">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<div class="hole">
+					</div>
+					<div class="mole"></div>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<div class="hole">
+					</div>
+					<div class="mole"></div>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<div class="hole">
+					</div>
+					<div class="mole"></div>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<div class="hole">
+					</div>
+					<div class="mole"></div>
+				</div>
+			</div>
+			<!-- end row -->
+
+			<!-- game over -->
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 text-center col-md-push-2">
+					<div class="gameOver__modal">
+						<div class="gameOver__modal__header">
+							<div class="img"> <img class="img--mole--1" src="img/mole.svg"> </div>
+							<div class="img"> <img class="img--mole--2" src="img/mole.svg"> </div>
+						</div>
+						<div class="gameOver__modal__content">
+							<h3>Best Score !!!</h3>
+							<span class="bst--score">0</span>
+						</div>
+						<div class="gameOver__modal__footer">
+							<button type="button" class="btn btn-danger btn--gameOver" onclick="resetGame()">Reset</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			 <!-- end game over -->
+
+			<div class="modalcus modal-custom" id="modal-id">
+					<div class="modal-content md-ct-custom">
+						<div class="modal-header-cus text-center">
+							<h4 class="modal-title"><h1 class="h1-custom">Welcome to game <p class="p__custom">Hit The Mole</p><h1></h4>
+							<button type="button" class="btn btn-danger btn-custom" onclick="startGame()">play</button>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

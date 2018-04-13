@@ -1,1 +1,1 @@
-# hitthemole
+#Project game Hit The Mole i developer from Whack A Mole Game

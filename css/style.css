@@ -1,0 +1,223 @@
+* {
+    font-family: 'Amatic SC', cursive;
+}
+.container-fluid.custom {
+    background: url(../img/bg_3.png);
+    width: 100%;
+    height: 800px;
+    background-position: bottom;
+    background-size: cover;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+body h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 112px;
+    color: #fffa12;
+    font-weight: bold;
+    text-shadow: 6px 1px 1px #000;
+}
+span.score {
+    font-size: 103px;
+    color: #ff1616;
+    font-family: 'Amatic SC', cursive;
+    text-shadow: 3px 3px 3px #a73333;
+    padding: 0px 22px;
+    background-color: #f6f509;
+    border-radius: 43px;
+}
+.game {
+    width: 65%;
+    height: 700px;
+   /*  background-color: #457298; */
+    margin: 0px auto;
+    position: relative;
+}
+.hole {
+    width: 100%;
+    height: 77px;
+    background-color: aliceblue;
+    margin-top: 55px;
+    background: url(../img/dirt.svg) bottom center no-repeat;
+    background-size: contain;
+    display: block;
+    z-index: 3;
+    position: relative;
+}
+.mole {
+    width: 95%;
+    height: 63px;
+    background: url(../img/mole.svg) top center no-repeat;
+    background-size: contain;
+    z-index: 1;
+    position: absolute;
+    top: 70px;
+    transition: all 0.5s;
+}
+.mole.up{
+    top: 11px;
+}
+.modal-content.md-ct-custom {
+    width: 50%;
+    margin: 0px auto;
+}
+.modal-header-cus {
+    padding: 108px 144px;
+    border-bottom: 1px solid #e5e5e5;
+    min-height: 16.428571429px;
+    background: url(../img/1.jpg) center no-repeat;
+}
+@media only screen and (min-width: 320px)
+                    and (max-width:480px){
+                        .hole {
+                            width: 100%;
+                            height: 16px;
+                            background-color: aliceblue;
+                            margin-top: 55px;
+                            background: url(../img/dirt.svg) bottom center no-repeat;
+                            background-size: contain;
+                            display: block;
+                            z-index: 3;
+                            position: relative;
+                        }
+                        .mole {
+                            width: 74%;
+                            height: 16px;
+                            background: url(../img/mole.svg) top center no-repeat;
+                            background-size: contain;
+                            z-index: 1;
+                            position: absolute;
+                            top: 56px;
+                            transition: all 0.5s;
+                        }
+                        
+                    }
+@media only screen and (min-width: 320px)
+                    and (max-width:480px){
+                        .mole.up{
+                            top: 44px;
+                        }
+                        .modal-content.md-ct-custom {
+                            width: 327px;
+                            margin: 0px auto;
+                        }
+                        .modal-header-cus {
+                            padding: 1px 55px;
+                            border-bottom: 1px solid #e5e5e5;
+                            min-height: 16.428571429px;
+                            background: url(../img/1.jpg) top center no-repeat;
+                        }
+}
+
+
+div#modal-id {
+    
+    /* width: 100%; */
+    margin-top: 40px;
+}
+.modalcus {
+    display: block;
+    /* overflow: auto; */
+    /* overflow-y: scroll; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+}
+
+h1.h1-custom {
+    font-size: 49px;
+    color: chartreuse;
+    text-align: center;
+}
+
+p.p__custom {
+    font-size: 87px;
+    text-align: center;
+    color: #e7f70f;
+}
+button.btn.btn-danger.btn-custom {
+    padding: 1px 48px;
+    font-size: 49px;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+/*progress Bar*/
+.progressBar {
+    width: 100%;
+    height: 21px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+#timer {
+    width: 100%;
+    height: 21px;
+    background: #E91E63;
+    position: absolute;
+}
+
+.gameOver__modal {
+    width: 100%;
+    height: 400px;
+    background: aliceblue;
+    position: relative;
+    top: -427px;
+    display: none;
+    z-index: 100;
+    overflow: hidden;
+
+}
+.gameOver__modal__header {
+    width: 100%;
+    height: 117px;
+    background: url(../img/troppy.png) no-repeat center #3acdf1;
+    background-size: contain;
+}
+.gameOver__modal__content {
+    width: 100%;
+    height: 200px;
+    background: #57e2e2;
+    text-align: center;
+}
+
+.gameOver__modal h3 {
+    margin: 0;
+    font-size: 65px;
+    font-family: 'Amatic SC', cursive;
+    color: red;
+    font-weight: bold;
+}
+span.bst--score {
+    font-size: 76px;
+    color: #e60a0a;
+    padding: 5px 49px;
+    background: aqua;
+    border-radius: 50%;
+}
+button.btn.btn-danger.btn--gameOver {
+    margin: 10px;
+    padding: 14px 45px;
+    font-size: 22px;
+}
+.gameOver__modal__footer {
+    background: #3acdf1;
+}
+.gameOver__modal img.img--mole--1 {
+    width: 7%;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    transform: rotateZ(150deg);
+}
+
+.gameOver__modal img.img--mole--2 {
+    width: 71px;
+    position: absolute;
+    top: -14px;
+    right: -3px;
+    transform: rotateZ(209deg);
+}
